@@ -1,0 +1,25 @@
+/* Nexo · tokens de diseño. Claro por defecto; oscuro con [data-theme="dark"]. */
+:root {
+  --bg: #F8FAFC; --surface: #FFFFFF; --surface-2: #F1F5F9; --border: #E2E8F0; --border-strong: #CBD5E1;
+  --text: #0F172A; --muted: #64748B; --faint: #94A3B8;
+  --accent: #A3E635; --accent-strong: #84CC16; --accent-ink: #1A2E05; --accent-soft: #ECFCCB;
+  --info: #3B82F6; --info-soft: #DBEAFE; --ok: #16A34A; --ok-soft: #DCFCE7;
+  --warn: #D97706; --warn-soft: #FEF3C7; --danger: #DC2626; --danger-soft: #FEE2E2; --violet: #7C3AED; --violet-soft: #EDE9FE;
+  --glass: rgba(255,255,255,.72); --shadow-sm: 0 1px 2px rgba(15,23,42,.06); --shadow-md: 0 8px 24px rgba(15,23,42,.08);
+  --shadow-lg: 0 24px 60px rgba(15,23,42,.16); --focus: 0 0 0 3px rgba(132,204,22,.35);
+  --r-sm: 8px; --r-md: 12px; --r-lg: 18px; --r-pill: 999px;
+  --s-1: 4px; --s-2: 8px; --s-3: 12px; --s-4: 16px; --s-5: 24px; --s-6: 32px; --s-7: 48px;
+  --font: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif; --mono: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+  --row-h: 44px; --cell-px: 14px;
+}
+[data-theme="dark"] {
+  --bg: #0F172A; --surface: #1E293B; --surface-2: #273449; --border: #334155; --border-strong: #475569;
+  --text: #F1F5F9; --muted: #94A3B8; --faint: #64748B;
+  --accent: #A3E635; --accent-strong: #BEF264; --accent-ink: #1A2E05; --accent-soft: rgba(163,230,53,.14);
+  --info: #60A5FA; --info-soft: rgba(96,165,250,.16); --ok: #4ADE80; --ok-soft: rgba(74,222,128,.15);
+  --warn: #FBBF24; --warn-soft: rgba(251,191,36,.15); --danger: #F87171; --danger-soft: rgba(248,113,113,.15);
+  --violet: #A78BFA; --violet-soft: rgba(167,139,250,.16);
+  --glass: rgba(30,41,59,.72); --shadow-sm: 0 1px 2px rgba(0,0,0,.4); --shadow-md: 0 8px 24px rgba(0,0,0,.35); --shadow-lg: 0 24px 60px rgba(0,0,0,.5);
+}
+[data-density="compact"] { --row-h: 34px; --cell-px: 10px; }
+[data-density="comfortable"] { --row-h: 54px; --cell-px: 16px; }

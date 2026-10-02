@@ -1,0 +1,28 @@
+{
+  "name": "nexo-360",
+  "version": "0.2.0",
+  "private": true,
+  "description": "CRM + ERP + Ecommerce B2B/B2C — SaaS multi-tenant",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server/index.js",
+    "dev": "node --watch --env-file-if-exists=.env server/index.js",
+    "test": "npm run test:db && npm run test:api",
+    "test:api": "bash scripts/db.sh reset && bash scripts/db.sh seed && node --test test/*.test.js",
+    "db:reset": "bash scripts/db.sh reset",
+    "db:migrate": "bash scripts/db.sh migrate",
+    "db:seed": "bash scripts/db.sh seed",
+    "test:db": "bash scripts/db.sh test"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.7.0",
+    "helmet": "^8.3.0",
+    "jose": "^6.2.12",
+    "pg": "^8.23.1"
+  }
+}
